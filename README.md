@@ -25,7 +25,7 @@ Inside your load function:
   ]
 }
 ```
-Inside you tick function:
+Inside your tick function:
 ```json
 {
   "replace": false,
@@ -33,6 +33,7 @@ Inside you tick function:
     "dungeon_name:tick"
    ]
 }
+```
 
 This will call your load and tick functions, and register your dungeon to the engine.
   
