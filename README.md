@@ -39,7 +39,20 @@ Inside your tick function:
 This will call your load and tick functions, and register your dungeon to the engine.
 
 
+## Loot Tables
 
+In general, dungeons should carry their own loot_tables, however moxiecraft dungeons has shared loot between dungeons.
+This loot as accessible via:
+
+```
+data/
+    moxiecraft_dungeons/
+        loot_table/
+```
+
+These items can be gotten in dungeons and ingame via the loot command:
+
+`/loot give player loot moxiecraft_dunegons:item_name`
 
 
 **This project is not affiliated with, endorsed by, or sponsored by
