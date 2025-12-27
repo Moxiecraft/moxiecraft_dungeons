@@ -42,7 +42,7 @@ This will call your load and tick functions, and register your dungeon to the en
 ## Loot Tables
 
 In general, dungeons should carry their own loot_tables, however moxiecraft dungeons have shared loot between dungeons.
-This loot as accessible via:
+This loot is created in and accessible via:
 
 ```
 data/
