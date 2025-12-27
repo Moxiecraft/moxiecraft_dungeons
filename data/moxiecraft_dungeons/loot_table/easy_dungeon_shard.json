@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{ 
+        "type": "minecraft:item", 
+        "name": "minecraft:green_dye", 
+        "functions": [{
+            "function": "minecraft:set_components",
+            "components":{
+                "minecraft:custom_name":{
+                    "color":"green","text":"Dungeon Shard"},
+                    "minecraft:lore":[[{"color":"green","text":"[EASY] "},
+                    {"color":"white","text":"Dungeon Shard"}]]
+            }
+        }]
+      }]
+    }
+  ]
+}

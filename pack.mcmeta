@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "supported_formats": {
+        "min_inclusive": 48,
+        "max_inclusive": 94
+    },
+    "description": "MoxieCraft's Dungeon Engine - v1.1 by doublehelix457",
+    "min_format": 48,
+    "max_format": 94
+  }
+}
