@@ -3,6 +3,7 @@
 Registering a Dungeon to the engine:
 
 Add the following to your dungeon datapack:
+```
 pack-name/
     pack.mcmeta
     data/
@@ -15,7 +16,7 @@ pack-name/
             function/
                 load.mcfunction
                 tick.mcfunction
-
+```
 Inside your load function:
 ```json
 {
