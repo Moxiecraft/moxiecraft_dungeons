@@ -37,6 +37,14 @@ Inside your tick function:
 ```
 
 This will call your load and tick functions, and register your dungeon to the engine.
+
+
+
+
+
+**This project is not affiliated with, endorsed by, or sponsored by
+Mojang Studios or Microsoft.
+Minecraft is a trademark of Mojang Studios.**
   
                     
                 
