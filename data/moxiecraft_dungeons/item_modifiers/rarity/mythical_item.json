@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "color": "blue",
+        "text": "Mythical Item",
+        "italic": true
+      }
+    ]
+  }
+]

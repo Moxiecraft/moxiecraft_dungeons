@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "color": "light_gray",
+        "text": "Dungeon Item",
+        "italic": true
+      }
+    ]
+  }
+]

@@ -57,6 +57,18 @@ These items can be gotten in dungeons and ingame via the loot command:
 These loot tables should be used for global dungeon items, (and items purchasable with dungeons items) only. 
 Special Server Items and Gifts should be put in https://github.com/Moxiecraft/moxiecraft_items
 
+## Item Rarity
+
+Dungeon Items have several different rarities, with more to come.
+This dungeon engine includes item_modifiers to easily add rarity to these items.
+
+```
+data/
+    moxiecraft_dungeons/
+        item_modifiers/
+            rarity/
+```
+
 **This project is not affiliated with, endorsed by, or sponsored by
 Mojang Studios or Microsoft.
 Minecraft is a trademark of Mojang Studios.**
