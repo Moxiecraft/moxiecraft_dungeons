@@ -1,6 +1,6 @@
 # Moxiecraft Dungeon Engine
 
-Registering a Dungeon to the engine:
+## Registering a Custom Dungeon to the Engine
 
 Add the following to your dungeon datapack:
 ```
@@ -54,8 +54,8 @@ These items can be gotten in dungeons and ingame via the loot command:
 
 `/loot give player loot moxiecraft_dunegons:item_name`
 
-These loot tables should be used for global dungeons only. 
-Global Items should be in https://github.com/Moxiecraft/moxiecraft_items
+These loot tables should be used for global dungeon items, (and items purchasable with dungeons items) only. 
+Special Server Items and Gifts should be put in https://github.com/Moxiecraft/moxiecraft_items
 
 **This project is not affiliated with, endorsed by, or sponsored by
 Mojang Studios or Microsoft.
