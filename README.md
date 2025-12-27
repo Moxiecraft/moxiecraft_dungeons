@@ -41,7 +41,7 @@ This will call your load and tick functions, and register your dungeon to the en
 
 ## Loot Tables
 
-In general, dungeons should carry their own loot_tables, however moxiecraft dungeons has shared loot between dungeons.
+In general, dungeons should carry their own loot_tables, however moxiecraft dungeons have shared loot between dungeons.
 This loot as accessible via:
 
 ```
@@ -54,6 +54,8 @@ These items can be gotten in dungeons and ingame via the loot command:
 
 `/loot give player loot moxiecraft_dunegons:item_name`
 
+These loot tables should be used for global dungeons only. 
+Global Items should be in https://github.com/Moxiecraft/moxiecraft_items
 
 **This project is not affiliated with, endorsed by, or sponsored by
 Mojang Studios or Microsoft.
