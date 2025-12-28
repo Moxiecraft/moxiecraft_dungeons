@@ -64,7 +64,6 @@ data/
     moxiecraft_dungeons/
         item_modifiers/
             effects/
-            enchantments/
             rarity/
             stats/
 ```
