@@ -73,10 +73,6 @@ data/
 
 Custom or Unusually high potion/ status effects
 
-### Enchantments
-
-Custom or Unusually high enchantment levels. E.g. Protection IV, Fortune IV
-
 ### Rarity
 
 Dungeon Items have several different rarities, with more to come.
