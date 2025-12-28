@@ -85,11 +85,11 @@ This dungeon engine includes item_modifiers to easily add rarity to these items.
 Currently the rarities are:
 
 ```
-Mystery Item    moxiecraft_dungeons:item_modifiers/rarity/mystery_item
-Dungeon Item    moxiecraft_dungeons:item_modifiers/rarity/dungeon_item
-Rare Item       moxiecraft_dungeons:item_modifiers/rarity/rare_item
-Mythical Item   moxiecraft_dungeons:item_modifiers/rarity/mythical_item
-Epic Item       moxiecraft_dungeons:item_modifiers/rarity/epic_item
+Mystery Item    moxiecraft_dungeons:rarity/mystery_item
+Dungeon Item    moxiecraft_dungeons:rarity/dungeon_item
+Rare Item       moxiecraft_dungeons:rarity/rare_item
+Mythical Item   moxiecraft_dungeons:rarity/mythical_item
+Epic Item       moxiecraft_dungeons:rarity/epic_item
 ```
 
 ### Stats
