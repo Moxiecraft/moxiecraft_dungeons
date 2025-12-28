@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "color": "gold",
+        "text": "Overworld Artifact",
+        "italic": true
+      }
+    ]
+  }
+]
