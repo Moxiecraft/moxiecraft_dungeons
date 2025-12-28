@@ -1,0 +1,9 @@
+[
+    {
+        "function": "minecraft:toggle_tooltips",
+        "toggles": {
+           "enchantments": false,
+           "attribute_modifiers": false
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[{
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+        "flame": 2
+    },
+    "add": true
+},
+{
+    "function": "minecraft:set_lore",
+    "mode": "insert",
+    "lore": [
+        {"color":"dark_green","text":"+ Flame"}
+    ]
+}]

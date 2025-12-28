@@ -1,7 +1,7 @@
 [{
     "function": "minecraft:set_enchantments",
     "enchantments": {
-        "punch": 2
+        "power": 3
     },
     "add": true
 },
@@ -9,6 +9,6 @@
     "function": "minecraft:set_lore",
     "mode": "insert",
     "lore": [
-        {"color":"dark_green","text":"+2 Punch"}
+        {"color":"dark_green","text":"9-13 Damage"}
     ]
 }]

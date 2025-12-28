@@ -1,0 +1,15 @@
+[{
+    "function": "minecraft:set_components",
+    "components": {
+        "minecraft:enchantable":{
+            "value":0
+        }
+    }
+},
+{
+    "function": "minecraft:set_lore",
+    "mode": "insert",
+    "lore": [
+        {"color":"dark_red", "text": "Non Enchantable"}
+    ]
+}]

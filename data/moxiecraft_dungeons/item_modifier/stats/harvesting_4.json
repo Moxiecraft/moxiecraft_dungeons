@@ -1,0 +1,14 @@
+[{
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+        "fortune": 4
+    },
+    "add": true
+},
+{
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+        {"color":"dark_green", "text": "+4 Harvesting"}
+    ]
+}]

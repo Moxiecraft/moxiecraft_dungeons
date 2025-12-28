@@ -1,0 +1,7 @@
+[{
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+        "unbreaking": 15
+    },
+    "add": true
+}]

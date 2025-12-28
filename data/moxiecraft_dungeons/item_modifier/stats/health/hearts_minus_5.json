@@ -1,0 +1,19 @@
+[
+    {
+        "function": "minecraft:set_components",
+        "components": {
+          "attribute_modifiers":[{
+                    "id":"f36378ed-520a-45e7-b128-b2c2e3ad0cc6",
+                    "type":"max_health",
+                    "amount":-10,
+                    "operation":"add_value"}]  
+        }
+    },
+    {
+        "function": "minecraft:set_lore",
+        "mode": "insert",
+        "lore": [[
+            "", {"color":"dark_red", "text":"-5 Hearts"}
+        ]]
+    }
+]
