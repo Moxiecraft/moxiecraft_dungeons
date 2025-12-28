@@ -5,7 +5,7 @@
       "rolls": 1,
       "entries": [{ 
         "type": "minecraft:item", 
-        "name": "minecraft:resin_clump", 
+        "name": "minecraft:flint", 
         "functions": [{
             "function": "minecraft:set_components",
             "components":{
