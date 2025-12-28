@@ -17,7 +17,7 @@ pack-name/
                 load.mcfunction
                 tick.mcfunction
 ```
-Inside your load function:
+Inside your load tag:
 ```json
 {
   "replace": false,
@@ -26,7 +26,7 @@ Inside your load function:
   ]
 }
 ```
-Inside your tick function:
+Inside your tick tag:
 ```json
 {
   "replace": false,
@@ -38,6 +38,9 @@ Inside your tick function:
 
 This will call your load and tick functions, and register your dungeon to the engine.
 
+Finally, register your dungeon to the engine registry inside your load.mcfunction:
+
+`data modify storage moxiecraft_dungeons:registry dungeons append value "dungeon_name"`
 
 ## Loot Tables
 

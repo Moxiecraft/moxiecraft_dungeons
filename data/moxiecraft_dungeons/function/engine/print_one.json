@@ -1,0 +1,9 @@
+tellraw @a [{
+    "text": " - ",
+    "color": "gray"
+},
+{
+    "nbt": "dungeons[-1]",
+    "storage": "moxiecraft_dungeons:registry",
+    "color": "green"
+}
