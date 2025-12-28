@@ -80,12 +80,14 @@ This dungeon engine includes item_modifiers to easily add rarity to these items.
 Currently the rarities are:
 
 ```
-Mystery Item        moxiecraft_dungeons:rarity/mystery_item
-Dungeon Item        moxiecraft_dungeons:rarity/dungeon_item
-Rare Item           moxiecraft_dungeons:rarity/rare_item
-Mythical Item       moxiecraft_dungeons:rarity/mythical_item
-Epic Item           moxiecraft_dungeons:rarity/epic_item
-Overworld Artifact  moxiecraft_dunegons:rarity/overworld_artifact
+Mystery Item            moxiecraft_dungeons:rarity/mystery_item
+Dungeon Item            moxiecraft_dungeons:rarity/dungeon_item
+Rare Item               moxiecraft_dungeons:rarity/rare_item
+Mythical Item           moxiecraft_dungeons:rarity/mythical_item
+Epic Item               moxiecraft_dungeons:rarity/epic_item
+Overworld Artifact      moxiecraft_dunegons:rarity/overworld_artifact
+Void Artifact (Red)     moxiecraft_dungeons:rarity/void_artifact_red
+Void Artifact (Blue)    moxiecraft_dunegons:rarity/void_artifact_blue
 ```
 
 To add rarity to your item on the dungeon loot table, simply add the function:

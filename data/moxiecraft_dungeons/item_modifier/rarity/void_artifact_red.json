@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "color": "dark_red",
+        "text": "Void Artifact",
+        "italic": true
+      }
+    ]
+  }
+]
