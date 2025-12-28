@@ -4,7 +4,7 @@
     "mode": "append",
     "lore": [
       {
-        "color": "light_gray",
+        "color": "gray",
         "text": "Dungeon Item",
         "italic": true
       }
