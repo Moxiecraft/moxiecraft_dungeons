@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{ 
+        "type": "minecraft:item", 
+        "name": "minecraft:resin_clump", 
+        "functions": [{
+            "function": "minecraft:set_components",
+            "components":{
+                "minecraft:custom_name":{
+                    "color":"red","text":"Dungeon Shard"},
+                    "minecraft:lore":[[{"color":"red","text":"[HARD] "},
+                    {"color":"white","text":"Dungeon Shard"}]]
+            }
+        }]
+      }]
+    }
+  ]
+}
