@@ -62,7 +62,7 @@ Special Server Items and Gifts should be put in https://github.com/Moxiecraft/mo
 ```
 data/
     moxiecraft_dungeons/
-        item_modifiers/
+        item_modifier/
             effects/
             rarity/
             stats/
@@ -87,11 +87,56 @@ Mythical Item   moxiecraft_dungeons:rarity/mythical_item
 Epic Item       moxiecraft_dungeons:rarity/epic_item
 ```
 
+To add rarity to your item on the dungeon loot table, simply add the function:
+
+`{"function": "minecraft:reference", "name": "moxiecraft_dungeons:rarity/rare_item}`
+
 ### Stats
 
 In general, specific loot with specific modifiers should belong to the dungeon specific datapack, however, moxiecraft dungeons have shared stats between multiple loot items.
+Using stat modifiers will not only add special abilities to items, but it automatically will add the item lore as well!
 
 Examples include: +4 Flame, +6 Toughness, +30 Attack Damage
+
+```
+data/
+    moxiecraft_dungeons/
+        item_modifier/
+            *              - global item modifiers that should be easily accessible, such as tooltip hiding.
+            effects/
+            rarity/
+            stats/
+                armor/     - contains modifiers that add armor, protection, toughness to items
+                attack/    - contains modifiers that add different damage types and values to items
+                bow/       - contains bow specific modifiers
+                crossbow/  - contains crossbow specific modifiers
+                health/    - contains modifiers that affect player health
+                luck/      - contains modifiers that affect luck
+                movement/  - contains modifiers that affect player movement
+                *          - global stat item modifiers that dont fit into a category, such as mending, enchantable, etc
+```
+
+To add a custom stat to your item on the dungeon loot table, simply add the function:
+
+`{"function": "minecraft:reference", "name": "moxiecraft_dungeons:stats/mendable}`
+
+Which will add the mending enchantment, and the lore "Mendable" in dark green.
+
+**NOTE:**
+stat modifiers use "insert" function. If lore needs to be in a specific order, add functions from last to first.
+
+Example:
+```
+"functions": [
+{"function": "minecraft:reference", "name": "moxiecraft_dungeons:stats/mendable},
+{"function": "minecraft:reference", "name": "moxiecraft_dungeons:stats/enchantable}
+]
+```
+This will result in the item having the following lore in this order:
+```
+Enchantable
+Mendable
+```
 
 **This project is not affiliated with, endorsed by, or sponsored by
 Mojang Studios or Microsoft.
