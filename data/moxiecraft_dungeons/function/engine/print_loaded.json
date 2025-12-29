@@ -1,6 +1,0 @@
-tellraw @a [{"",
-    {"text":"[Moxiecraft Dungeons] ", "color":"dark_purple"},
-    {"text":"Loaded dungeons:", "color":"dark_gray"},
-}]
-
-execute as storage moxiecraft_dungeons:registry dungeons run function moxiecraft_dungeons:engine/print_one
