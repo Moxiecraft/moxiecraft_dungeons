@@ -1,2 +1,1 @@
-# Engine tick: run all registered dungeon ticks
-function #moxiecraft_dungeons:tick
+scoreboard players add #hb mcd_debug 1

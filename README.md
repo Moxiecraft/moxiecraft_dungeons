@@ -2,7 +2,7 @@
 
 ## Registering a Custom Dungeon to the Engine
 
-Add the following to your dungeon datapack:
+Add the following required files to your dungeon datapack:
 ```
 pack-name/
     pack.mcmeta
@@ -11,13 +11,15 @@ pack-name/
             tags/
                 function/
                     load.json
-                    tick.json
         dunegon_name/
             function/
                 load.mcfunction
                 tick.mcfunction
+            predicate/
+                bounds.json
+                
 ```
-Inside your load tag:
+Inside your load.json tag:
 ```json
 {
   "replace": false,
@@ -26,21 +28,40 @@ Inside your load tag:
   ]
 }
 ```
-Inside your tick tag:
+
+This will allow the engine to call your load function.
+
+Next, specify the bounds that your dungeon will operate in your REQUIRED predicate, bounds.json file:
+
 ```json
 {
-  "replace": false,
-  "values": [
-    "dungeon_name:tick"
-   ]
+    "condition":
+        "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "location": {
+                "position": {
+                    "x": { "min": 100, "max": 120},
+                    "y": { "max": 64, "max": 74 },
+                    "z": { "min": 100, "max": 130 }
+                }
+            }
+        }
 }
 ```
 
-This will call your load and tick functions, and register your dungeon to the engine.
+Using your own region values.
 
 Finally, register your dungeon to the engine registry inside your load.mcfunction:
 
-`data modify storage moxiecraft_dungeons:registry dungeons append value "dungeon_name"`
+`function moxiecraft_dungeons:api/register {"dungeon": "dungeon_name"}`
+
+Once finished, moxiecraft_dungeons will begin ticking your dungeon, 
+by calling your required tick function,
+only if there is a player within the boundaries of your dungeon.
+
+If you wish to extend the vertical boundaries to max height and depth of your dungeon, simply omit the "y": {} key entirely.
+
 
 ## Loot Tables
 
