@@ -1,9 +1,7 @@
 [{
     "function": "minecraft:set_components",
     "components": {
-        "minecraft:enchantable":{
-            "value":0
-        }
+        "!minecraft:enchantable": {}
     }
 },
 {
