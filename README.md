@@ -56,12 +56,27 @@ Finally, register your dungeon to the engine registry inside your load.mcfunctio
 
 `function moxiecraft_dungeons:api/register {"dungeon": "dungeon_name"}`
 
-Once finished, moxiecraft_dungeons will begin ticking your dungeon, 
-by calling your required tick function,
-only if there is a player within the boundaries of your dungeon.
-
 If you wish to extend the vertical boundaries to max height and depth of your dungeon, simply omit the "y": {} key entirely.
 
+## Registering Hooks
+
+Moxiecraft_Dungeons currently provides 3 hooks:
+- Enter bounds
+- Exit bounds
+- Tick Dungeon
+
+You can have specific handlers called when these things happen by registering them:
+
+
+```json
+
+function moxiecraft_dungeons:api/hook/register_entry_hook {"dungeon: "dungeon_name", hook:"dungeon_name:on_enter"}
+
+function moxiecraft_dungeons:api/hook/register_exit_hook {"dungeon: "dungeon_name", hook:"dungeon_name:on_exit"}
+
+function moxiecraft_dungeons:api/hook/register_tick_hook {"dungeon: "dungeon_name", hook:"dungeon_name:on_tick"}
+
+```
 
 ## Loot Tables
 
@@ -150,7 +165,7 @@ To add a custom stat to your item on the dungeon loot table, simply add the func
 Which will add the mending enchantment, and the lore "Mendable" in dark green.
 
 **NOTE:**
-stat modifiers use "insert" function. If lore needs to be in a specific order, add functions from last to first.
+stat modifiers use the "insert" function to appear above item lore. If stats needs to be in a specific order, add functions from last to first.
 
 Example:
 ```
